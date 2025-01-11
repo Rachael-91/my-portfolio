@@ -12,6 +12,10 @@
     font-family: var(--main-font-family);
   }
 
+  body.hidden {
+    visibility: hidden;
+  }
+  
   .container {
     font-family: var(--main-font-family);
     font-weight: 400;

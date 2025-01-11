@@ -1,7 +1,22 @@
 // main.js
 
-// Function to load partials into the page
-async function loadPartials() {
+// Function to load the head.html content
+async function loadHead() {
+    try {
+      const response = await fetch('/src/head.html');
+      if (response.ok) {
+        const headContent = await response.text();
+        document.head.innerHTML = headContent + document.head.innerHTML;
+      } else {
+        console.error('Failed to load head:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error loading head:', error);
+    }
+  }
+  
+  // Function to load the header and footer
+  async function loadPartials() {
     try {
       // Load Header
       const headerResponse = await fetch('/src/header.html');
@@ -23,20 +38,17 @@ async function loadPartials() {
     } catch (error) {
       console.error('Error loading partials:', error);
     }
-
-    // Load the head.html content
-    async function loadHead() {
-        const response = await fetch('/src/head.html');
-        if (response.ok) {
-          const headContent = await response.text();
-          document.head.innerHTML = headContent + document.head.innerHTML;
-        } else {
-          console.error('Failed to load head:', response.statusText);
-        }
-      }
-      loadHead();
   }
   
-  // Call the function to load the partials
-  loadPartials();
+  // Function to initialize the page (load head, header, and footer, then reveal page)
+  async function initializePage() {
+    document.body.classList.add('hidden'); // Hide body during loading
+    await loadHead(); // Load head first
+    await loadPartials(); // Then load header and footer
+    document.body.classList.remove('hidden'); // Reveal the body
+  }
+  
+  // Initialize the page
+  initializePage();
+  
   
