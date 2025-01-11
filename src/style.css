@@ -7,11 +7,21 @@
   body {
     margin-top: 150px;
   }
+
+  .container {
+    font-family: "Didact Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   h1,
   h2,
   h3 {
     text-align: center;
     margin: 0;
+    font-family: "Didact Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   h1 {
