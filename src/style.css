@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgba(249, 229, 250, 0.7);
-    --secondary-color: #f5f2fe;
+    --secondary-color: rgba(254, 254, 254, 0.665);
     --accent-color: #A25AAA;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     --main-font-family: "Didact Gothic", serif;
@@ -15,7 +15,7 @@
   body.hidden {
     visibility: hidden;
   }
-  
+
   .container {
     font-family: var(--main-font-family);
     font-weight: 400;
@@ -64,12 +64,12 @@ footer {
 
   .navigation-links {
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: center;
   }
   
   .navigation-links a {
-    margin: 20px;
+    margin: 10px;
     border-radius: 4px;
     padding: 20px 15px;
     text-decoration: none;
@@ -80,6 +80,16 @@ footer {
     color: var(--accent-color);
     text-align: center;
     display: block;
+  }
+
+  .paragraph-sm {
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    padding: 30px;
+  }
+  
+  .description-text {
+    font-size: 16px;
   }
   
   .about-paragraphs {
@@ -103,4 +113,8 @@ footer {
   button:hover {
     background-color: rgba(162, 90, 170, 0.6);
     transition: ease-in-out;
+  }
+
+  .navbar {
+    background-color: var(--accent-color);
   }
