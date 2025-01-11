@@ -6,7 +6,8 @@ async function loadHead() {
       const response = await fetch('/src/head.html');
       if (response.ok) {
         const headContent = await response.text();
-        document.head.innerHTML = headContent + document.head.innerHTML;
+        // Append the loaded head content before the existing head content
+        document.head.insertAdjacentHTML('afterbegin', headContent);
       } else {
         console.error('Failed to load head:', response.statusText);
       }
@@ -42,13 +43,18 @@ async function loadHead() {
   
   // Function to initialize the page (load head, header, and footer, then reveal page)
   async function initializePage() {
-    document.body.classList.add('hidden'); // Hide body during loading
-    await loadHead(); // Load head first
-    await loadPartials(); // Then load header and footer
-    document.body.classList.remove('hidden'); // Reveal the body
+    try {
+      document.body.classList.add('hidden'); // Hide body during loading
+      await loadHead(); // Load the head first
+      await loadPartials(); // Load header and footer next
+      document.body.classList.remove('hidden'); // Reveal the body
+    } catch (error) {
+      console.error('Error initializing the page:', error);
+    }
   }
   
   // Initialize the page
   initializePage();
+  
   
   
