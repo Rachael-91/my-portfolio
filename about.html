@@ -1,240 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me - Rachael Alexander</title>
     <style>
-      body.hidden {
-        visibility: hidden;
-      }
+        body.hidden {
+            visibility: hidden;
+        }
     </style>
     <script src="https://kit.fontawesome.com/8343bc344d.js" crossorigin="anonymous"></script>
 </head>
 <body class="hidden">
+    <!-- Header -->
     <div id="header"></div>
-    <br/>
-    <br/>
-    <a href="/" class="homepage-link" title="Back to Homepage">Back to homepage</a>
-    <h1>About me</h1>
-    <h3>Front-end developer from Sydney, Australia</h3>
-    <br/>
+
+    <!-- Main Content -->
     <div class="container">
-      <div class="">
+        <!-- Back to Homepage -->
+        <a href="/" class="homepage-link" title="Back to Homepage">Back to homepage</a>
+
+        <!-- About Me -->
         <div class="section1 paragraph-sm about-info">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">My Skills</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Programs I Have Experience With</button>
-              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Other</button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-              <div class="row skills-list">
-              <div class="col">
-                <p>HTML</p>
-              </div>
-              <div class="col">
-                <p>CSS</p>
-              </div>
-              <div class="col">
-                <p>Javascript</p>
-              </div>
-              <div class="col">
-                <p>Data Analytics</p>
-              </div>
-            </div>
-            <div class="row skills-list">
-              <div class="col">
-                <p>Process Improvement</p>
-              </div>
-              <div class="col">
-                <p>Research</p>
-              </div>
-              <div class="col">
-                <p>Data Analytics</p>
-              </div>
-              <div class="col">
-                <p>Problem Solving</p>
-              </div>
-              </div>
-              <div class="row skills-list">
-                <div class="col">
-                  <p>Project Management</p>
+            <h1>About Me</h1>
+            <h3>Front-end developer from Sydney, Australia</h3>
+        </div>
+
+        <!-- Skills and Tabs -->
+        <div class="section1 paragraph-sm about-info">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">My Skills</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Programs I Have Experience With</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Other</button>
                 </div>
-                <div class="col">
-                  <p>Customer Service</p>
+            </nav>
+
+            <div class="tab-content border-ra" id="nav-tabContent">
+                <!-- My Skills -->
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row skills-list">
+                        <div class="col">HTML</div>
+                        <div class="col">CSS</div>
+                        <div class="col">JavaScript</div>
+                        <div class="col">Data Analytics</div>
+                    </div>
+                    <div class="row skills-list">
+                        <div class="col">Process Improvement</div>
+                        <div class="col">Research</div>
+                        <div class="col">Problem Solving</div>
+                        <div class="col">Project Management</div>
+                    </div>
+                    <div class="row skills-list">
+                        <div class="col">Customer Service</div>
+                        <div class="col">Purchasing</div>
+                        <div class="col">Training</div>
+                        <div class="col"></div>
+                    </div>
                 </div>
-                <div class="col">
-                  <p>Purchasing</p>
+
+                <!-- Programs I Have Experience With -->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row skills-list">
+                        <div class="col">Microsoft Office (Excel, Word, PowerPoint, Outlook)</div>
+                        <div class="col">Odoo (V7, V14, V17 & V18)</div>
+                        <div class="col">Pronto Software</div>
+                        <div class="col">PowerBI</div>
+                    </div>
+                    <div class="row skills-list">
+                        <div class="col">GitHub</div>
+                        <div class="col">Bootstrap</div>
+                        <div class="col">Confluence</div>
+                        <div class="col">MindManager</div>
+                    </div>
+                    <div class="row skills-list">
+                        <div class="col">Figma</div>
+                        <div class="col">OpenCart</div>
+                        <div class="col">phpMyAdmin</div>
+                        <div class="col">Netlify</div>
+                    </div>
                 </div>
-                <div class="col">
-                  <p>Training</p>
+
+                <!-- Other -->
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    ...
                 </div>
-              </div>
-              </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><div class="row skills-list">
-              <div class="col">
-               <p>Microsoft Office (Excel, Word, Powerpoint, Outlook)</p>
-              </div>
-              <div class="col">
-                <p>Odoo (V7, V14, V17 & V18)</p>
-              </div>
-              <div class="col">
-                <p>Pronto Software</p>
-              </div>
-              <div class="col">
-                <p>PowerBI</p>
-              </div>
             </div>
-            <div class="container text-center">
-            <div class="row skills-list">
-              <div class="col">
-               <p>GitHub</p>
-              </div>
-              <div class="col">
-                <p>Bootstrap</p>
-              </div>
-              <div class="col">
-                <p>Confluence</p>
-              </div>
-              <div class="col">
-                <p>MindManager</p>
-              </div>
+        </div>
+
+        <!-- Work History -->
+        <div class="section1 paragraph-sm about-info">
+            <h1>Work History</h1>
+            <p>Click on each point for more information...</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- Accordion Items -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Inox World 2017 - Current
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body border-ra">
+                            <h3>Internal Sales & Customer Service Supervisor - November 2017 - December 2018</h3>
+                            <p>I started with Inox World in November 2017.</p>
+                            <h3>Project & Operations Analyst - December 2018 - October 2020</h3>
+                            <p>...</p>
+                            <h3>Supply Chain Analyst - October 2020 - Current</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Beaver Technology Services 2013 - 2017
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body border-ra">
+                            <h3>Internal Sales Supervisor - 2013 - 2015</h3>
+                            <p>...</p>
+                            <h3>Purchasing/Internal Sales Co-ordinator - 2015 - 2017</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Beaver Brands 2010 - 2013
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body border-ra">
+                            <h3>Internal Sales - September 2010 - November 2012</h3>
+                            <p>...</p>
+                            <h3>Internal Sales Supervisor - November 2012 - October 2013</h3>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-            <div class="container text-center">
-            <div class="row skills-list">
-              <div class="col">
-               <p>Figma</p>
-              </div>
-              <div class="col">
-                <p>OpenCart</p>
-              </div>
-              <div class="col">
-                <p>phpMyAdmin</p>
-              </div>
-              <div class="col">
-                <p>Netlify</p>
-              </div>
-            </div>
-          </div>
-          </div>
-            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
-          </div>
-      </div>
-      <br/>
-      <div class="section1 paragraph-sm about-info">
-        <h1>Work History</h1>
-        <p>Click on each point for more information...</p>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <!-- Accordion Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Inox World 2017 - Current
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <h3>Internal Sales & Customer Service Supervisor - November 2017 - December 2018</h3>
-                <p>I started with Inox World in November 2017.</p>
-                <h3><strong>Project & Operations Analyst December 2018 - October 2020</strong></h3>
-                <p></p>
-                <h3>Supply Chain Analyst October 2020 - Current</h3>
-                <p></p>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Accordion Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Beaver Technology Services 2013 - 2017
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <h3>Internal Sales Supervisor - 2013 - 2015</h3>
-                <p>I started with Beaver Technology Services in October 2013.</p>
-                <h3>Purchasing / Internal Sales Co-ordinator - 2015 - 2017</h3>
-                <p>In November 2012, I became Internal Sales Supervisor for the company.</p>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Accordion Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Beaver Brands 2010 - 2013
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <h3>Internal Sales - September 2010 - November 2012</h3>
-                <p>Started at Beaver Brands as an office administrator in 2010, and moved to Internal Sales not long after.</p>
-                <h3>Internal Sales Supervisor - November 2012 - Oct 2013</h3>
-                <p>In November 2012, I became Internal Sales Supervisor for the company.</p>
-              </div>
-            </div>
-          </div>
-        </div>        
-    </div>
-    </div>
-  </div>
-<br/>
-  <div class="container">
-    <div class="section1 paragraph-sm about-info">
-      <h1>Certificates</h1>
-        <p>I am currently learning front-end web development through SheCodes. Below are my achievements so far...
-        </p>
-        <div>
-          <div class="container text-center">
+        </div>
+
+        <!-- Certificates -->
+        <div class="section1 paragraph-sm about-info">
+            <h1>Certificates</h1>
+            <p>I am currently learning front-end web development through SheCodes. Below are my achievements so far...</p>
             <div class="row align-items-start">
-              <div class="col">
-                <img src="/images/SheCodes Certificate - Rachael Alexander - Introduction to Coding.png" class="img-fluid" alt="...">
-              </div>
-              <div class="col">
-                <img src="/images/SheCodes Certificate - Rachael Alexander - Introduction to Web Development.png" class="img-fluid" alt="...">
-              </div>
-              <div class="col">
-                <img src="/images/SheCodes Certificate - Rachael Alexander - Web Development.png" class="img-fluid" alt="...">
-              </div>
+                <div class="col"><img src="/assets/images/SheCodes Certificate - Rachael Alexander - Introduction to Coding.png" class="img-fluid" alt="Introduction to Coding" /></div>
+                <div class="col"><img src="/assets/images/SheCodes Certificate - Rachael Alexander - Introduction to Web Development.png" class="img-fluid" alt="Introduction to Web Development" /></div>
+                <div class="col"><img src="/assets/images/SheCodes Certificate - Rachael Alexander - Web Development.png" class="img-fluid" alt="Web Development" /></div>
             </div>
-            <br/>
-              <div class="row align-items-start">
-                <div class="col">
-                  <img src="/images/SheCodes Certificate - Rachael Alexander - Advanced Web Development.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col">
-                  <img src="/images/SheCodes Certificate - Rachael Alexander - AI.png" class="img-fluid" alt="...">
-                </div>
-                <div class="col">
-                </div>
-              </div>
-           </div>
+            <div class="row align-items-start">
+                <div class="col"><img src="/assets/images/SheCodes Certificate - Rachael Alexander - Advanced Web Development.png" class="img-fluid" alt="Advanced Web Development" /></div>
+                <div class="col"><img src="/assets/images/SheCodes Certificate - Rachael Alexander - AI.png" class="img-fluid" alt="AI Certificate" /></div>
+                <div class="col"><img src=""></div>
+
             </div>
-          </div>
-      <div id="footer"></div>
-      <br/>
-      <script src="/js/main.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  </body>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container footer" id="footer"></div>
+
+    <!-- Scripts -->
+    <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -65,7 +65,7 @@
   
 footer {
   margin-top: 20px;
-  padding: 50px;
+  padding: 20px 10px;
   background-color: var(--primary-color);
   border-radius: 8px;
   box-shadow: var(--box-shadow);
@@ -103,6 +103,7 @@ footer {
     background-color: var(--primary-color);
     padding: 30px;
     box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
   }
   
   .description-text {
@@ -175,4 +176,23 @@ footer {
 .nav-link-btn button:hover {
   background-color: var(--hover-color);
   transition: ease-in-out;
+}
+
+.row {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer .row {
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.border-ra {
+  border: var(--accent-color) 1px solid;
+  border-radius: 6px;
+  background-color: var(--secondary-color);
 }

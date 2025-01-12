@@ -3,7 +3,7 @@
 // Function to load the head.html content
 async function loadHead() {
     try {
-      const response = await fetch('/src/head.html');
+      const response = await fetch('/components/head.html');
       if (response.ok) {
         const headContent = await response.text();
         // Append the loaded head content before the existing head content
@@ -20,7 +20,7 @@ async function loadHead() {
   async function loadPartials() {
     try {
       // Load Header
-      const headerResponse = await fetch('/src/header.html');
+      const headerResponse = await fetch('/components/header.html');
       if (headerResponse.ok) {
         const headerHTML = await headerResponse.text();
         document.getElementById('header').innerHTML = headerHTML;
@@ -29,7 +29,7 @@ async function loadHead() {
       }
   
       // Load Footer
-      const footerResponse = await fetch('/src/footer.html');
+      const footerResponse = await fetch('/components/footer.html');
       if (footerResponse.ok) {
         const footerHTML = await footerResponse.text();
         document.getElementById('footer').innerHTML = footerHTML;
