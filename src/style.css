@@ -2,6 +2,7 @@
     --primary-color: rgba(249, 229, 250, 0.7);
     --secondary-color: rgba(254, 254, 254, 0.665);
     --accent-color: #A25AAA;
+    --hover-color: rgba(162, 90, 170, 0.6);
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     --main-font-family: "Didact Gothic", serif;
     --secondary-font-family: "Playwrite IS", serif;
@@ -52,6 +53,16 @@
     line-height: 1.5;
     text-align: center;
   }
+
+  .col a, a:link, a:visited {
+   color: var(--accent-color);
+    text-decoration: none;
+  }
+
+  .col a:hover {
+    color: black;
+  }
+
   
 footer {
   margin-top: 20px;
@@ -59,6 +70,13 @@ footer {
   background-color: var(--primary-color);
   border-radius: 8px;
   box-shadow: var(--box-shadow);
+}
+
+.footer-coded {
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  font-size: 14px;
+  margin-top: 5px;
 }
 
   .navigation-links {
@@ -85,6 +103,7 @@ footer {
     border-radius: 6px;
     background-color: var(--primary-color);
     padding: 30px;
+    box-shadow: var(--box-shadow);
   }
   
   .description-text {
@@ -108,17 +127,23 @@ footer {
   }
 
   .button-links {
-    background-color: #A25AAA;
+    background-color: var(--accent-color);
     border-radius: 6px;
     padding: 15px 20px;
     margin: 20px;
     border: none;
     color: white;
+    box-shadow: var(--box-shadow);
   }
 
   button:hover {
-    background-color: rgba(162, 90, 170, 0.6);
+    background-color: var(--hover-color);
     transition: ease-in-out;
+  }
+
+.button-links:focus {
+    outline: none;
+    box-shadow: none;
   }
 
   .navbar {
@@ -141,4 +166,14 @@ footer {
 
 .skills-list {
   padding-top: 5px;
+}
+
+.nav-tabs button {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.nav-link-btn button:hover {
+  background-color: var(--hover-color);
+  transition: ease-in-out;
 }

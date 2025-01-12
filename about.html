@@ -20,24 +20,29 @@
     <div class="container">
       <div class="">
         <div class="section1 paragraph-sm about-info">
-          <h1>My Skills</h1>
-            <div class="container text-center">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">My Skills</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Programs I Have Experience With</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Other</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
               <div class="row skills-list">
-                <div class="col">
-                  <p>HTML</p>
-                </div>
-                <div class="col">
-                  <p>CSS</p>
-                </div>
-                <div class="col">
-                  <p>Javascript</p>
-                </div>
-                <div class="col">
-                  <p>Data Analytics</p>
-                </div>
-          </div>
-          </div>
-          <div class="container text-center">
+              <div class="col">
+                <p>HTML</p>
+              </div>
+              <div class="col">
+                <p>CSS</p>
+              </div>
+              <div class="col">
+                <p>Javascript</p>
+              </div>
+              <div class="col">
+                <p>Data Analytics</p>
+              </div>
+            </div>
             <div class="row skills-list">
               <div class="col">
                 <p>Process Improvement</p>
@@ -51,9 +56,7 @@
               <div class="col">
                 <p>Problem Solving</p>
               </div>
-            </div>
-            </div>
-            <div class="container text-center">
+              </div>
               <div class="row skills-list">
                 <div class="col">
                   <p>Project Management</p>
@@ -69,10 +72,7 @@
                 </div>
               </div>
               </div>
-              <br/>
-            <h1>Programs I Have Experience With</h1>
-          <div class="container text-center">
-            <div class="row skills-list">
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><div class="row skills-list">
               <div class="col">
                <p>Microsoft Office (Excel, Word, Powerpoint, Outlook)</p>
               </div>
@@ -117,10 +117,12 @@
                 <p>Netlify</p>
               </div>
             </div>
-            </div>
-        </div>
+          </div>
+          </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+          </div>
       </div>
-  <br/>
+      <br/>
       <div class="section1 paragraph-sm about-info">
         <h1>Work History</h1>
         <p>Click on each point for more information...</p>
