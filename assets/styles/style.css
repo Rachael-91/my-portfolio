@@ -47,7 +47,7 @@ p {
   color: black;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
   margin-top: 20px;
   padding: 20px 10px;
@@ -62,6 +62,32 @@ footer {
   font-size: 14px;
   margin-top: 5px;
 }
+
+/* Footer Icons */
+.footer .icon {
+  font-size: 32px; /* Default size for larger screens */
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer .icon:hover {
+  transform: scale(1.2);
+  color: var(--accent-color);
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 576px) {
+  .footer .icon {
+      font-size: 24px; /* Smaller icon size for mobile */
+      margin: 0 5px;   /* Reduced spacing between icons */
+  }
+
+  .footer .row {
+      flex-wrap: nowrap; /* Prevent icons from stacking */
+      justify-content: space-evenly; /* Distribute icons evenly */
+  }
+}
+
 
 /* Navigation */
 .navigation-links {
