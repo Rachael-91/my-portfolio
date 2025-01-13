@@ -26,67 +26,121 @@
             <h3>Front-end developer from Sydney, Australia</h3>
         </section>
 
-        <!-- Skills and Tabs -->
         <div class="section1 paragraph-sm about-info">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">My Skills</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Programs I Have Experience With</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Other</button>
-                </div>
-            </nav>
-
-            <div class="tab-content border-ra" id="nav-tabContent">
+            <h1>My Skills</h1>
+            <p>Click on each point for more information...</p>
+            <div class="tab-content" id="nav-tabContent">
                 <!-- My Skills -->
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="row skills-list">
-                        <div class="col">HTML</div>
-                        <div class="col">CSS</div>
-                        <div class="col">JavaScript</div>
-                        <div class="col">Data Analytics</div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <!-- Accordion Item: Coding -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCoding" aria-expanded="false" aria-controls="flush-collapseCoding">
+                                    Coding
+                                </button>
+                            </h2>
+                            <div id="flush-collapseCoding" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <h4><strong>HTML:</strong></h4>
+                                    <p>Creating semantic, accessible, and responsive web structures, ensuring a strong foundation for every project. Skilled in using HTML5 for multimedia integration and SEO optimization.</p>
+                                    <h4><strong>CSS:</strong></h4>
+                                    <p>Ability to design visually appealing and responsive layouts with CSS3. Proficient in using Flexbox, Grid, and media queries for modern designs, and efficient styling workflows.</p>
+                                    <h4><strong>JavaScript:</strong></h4>
+                                    <p>Ability to build interactive, dynamic web pages using vanilla JavaScript and ES6+. Able to use DOM manipulation, event handling, and integrating third-party APIs to fetch and display live data.</p>
+                                    <h4><strong>Tools and Frameworks:</strong></h4>
+                                    <p>Using GitHub for version control and collaboration, Bootstrap for rapid UI prototyping, and Netlify for deployment and hosting. Familiar with debugging tools and browser dev tools to troubleshoot and optimize code.</p>
+                                    <h4><strong>Project Work:</strong></h4>
+                                    <p>Created responsive and interactive projects, including weather apps, world clocks, and AI-powered applications, showcasing the ability to combine technical skills with problem-solving.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item: Program Implementation -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseImplementation" aria-expanded="false" aria-controls="flush-collapseImplementation">
+                                    Program Implementation
+                                </button>
+                            </h2>
+                            <div id="flush-collapseImplementation" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <h3>Power BI</h3>
+                                    <p>Importing data sources (e.g., Excel), transforming data, creating relationships between data tables, data modeling, and visualizations. Also using DAX formulas to create specific reports for sales.</p>
+                                    <h3>Odoo V18</h3>
+                                    <p>Creating project management plans, configuring databases (test and live), creating data upload templates, and utilizing Odoo Studio for modifications (e.g., computed fields). Analyzed business processes, ensured configurations, created documentation, and implemented user training.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item: Microsoft Office -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOffice" aria-expanded="false" aria-controls="flush-collapseOffice">
+                                    Microsoft Office (Excel, Word, PowerPoint, Outlook)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOffice" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <p>Creating professional presentations in PowerPoint.</p>
+                                    <p>Analyzing data with Excel, including pivot tables and formulas.</p>
+                                    <p>Streamlining communication through Outlook.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item: Data Analytics -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAnalytics" aria-expanded="false" aria-controls="flush-collapseAnalytics">
+                                    Data Analytics
+                                </button>
+                            </h2>
+                            <div id="flush-collapseAnalytics" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <p>Visualizing data using Power BI and Excel dashboards.</p>
+                                    <p>Extracting insights from sales and operational data.</p>
+                                    <p>Creating actionable reports for stakeholders.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item: Customer Service -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseService" aria-expanded="false" aria-controls="flush-collapseService">
+                                    Customer Service
+                                </button>
+                            </h2>
+                            <div id="flush-collapseService" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <p>Addressing customer queries promptly and efficiently.</p>
+                                    <p>Providing technical support for software implementations.</p>
+                                    <p>Training clients on using tools and platforms effectively.</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Accordion Item: Project Management -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseManagement" aria-expanded="false" aria-controls="flush-collapseManagement">
+                                    Project Management
+                                </button>
+                            </h2>
+                            <div id="flush-collapseManagement" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body border-ra">
+                                    <p>Creating and tracking project timelines and deliverables.</p>
+                                    <p>Collaborating with cross-functional teams for seamless execution.</p>
+                                    <p>Managing resources effectively to meet deadlines and goals.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row skills-list">
-                        <div class="col">Process Improvement</div>
-                        <div class="col">Research</div>
-                        <div class="col">Problem Solving</div>
-                        <div class="col">Project Management</div>
-                    </div>
-                    <div class="row skills-list">
-                        <div class="col">Customer Service</div>
-                        <div class="col">Purchasing</div>
-                        <div class="col">Training</div>
-                        <div class="col"></div>
-                    </div>
-                </div>
-
-                <!-- Programs I Have Experience With -->
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="row skills-list">
-                        <div class="col">Microsoft Office (Excel, Word, PowerPoint, Outlook)</div>
-                        <div class="col">Odoo (V7, V14, V17 & V18)</div>
-                        <div class="col">Pronto Software</div>
-                        <div class="col">PowerBI</div>
-                    </div>
-                    <div class="row skills-list">
-                        <div class="col">GitHub</div>
-                        <div class="col">Bootstrap</div>
-                        <div class="col">Confluence</div>
-                        <div class="col">MindManager</div>
-                    </div>
-                    <div class="row skills-list">
-                        <div class="col">Figma</div>
-                        <div class="col">OpenCart</div>
-                        <div class="col">phpMyAdmin</div>
-                        <div class="col">Netlify</div>
-                    </div>
-                </div>
-
-                <!-- Other -->
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    ...
                 </div>
             </div>
         </div>
+        
 
         <!-- Work History -->
         <div class="section1 paragraph-sm about-info">

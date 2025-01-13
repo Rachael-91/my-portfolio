@@ -19,12 +19,10 @@ body.hidden {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   text-align: center;
   margin: 0;
   font-family: var(--main-font-family);
-  font-weight: 400;
-  font-style: normal;
 }
 
 h1 { font-size: 96px; }
@@ -118,11 +116,9 @@ footer {
 }
 
 .about-info h1, .about-info h2, .about-info h3 {
-  color: var(--accent-color);
   margin: 5px;
   padding: 5px;
   font-family: var(--main-font-family);
-  font-weight: 800;
 }
 
 /* Buttons */
@@ -196,14 +192,14 @@ footer {
 .border-ra {
   border: 1px solid var(--accent-color);
   border-radius: 6px;
-  background-color: var(--secondary-color);
+  padding: 5px;
 }
 
 /* Tabs */
 .nav-tabs .nav-link {
   background-color: var(--secondary-color);
   color: black;
-  border: 1px solid transparent; /* Match Bootstrap's border setup */
+  border: 1px solid var(--accent-color) !important; /* Match Bootstrap's border setup */
   border-radius: 0.25rem; /* Optional: keep the rounded corners */
 }
 
