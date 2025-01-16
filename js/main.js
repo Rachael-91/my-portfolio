@@ -69,6 +69,33 @@ async function initializePage() {
 // Initialize the page
 initializePage();
 
-  
+// About Page Accordion auto scroll to top
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionButtons = document.querySelectorAll(".accordion-button");
+
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      setTimeout(() => {
+        const expanded = event.target.getAttribute("aria-expanded") === "true";
+        if (expanded) {
+          // Get the accordion header element
+          const accordionHeader = event.target.closest(".accordion-header");
+
+          // Adjust for sticky headers or navbars if needed
+          const headerOffset = 70; // Adjust this value if you have a fixed navbar
+          const elementPosition = accordionHeader.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - headerOffset;
+
+          // Scroll to the adjusted position
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        }
+      }, 300); // Adjust delay to match Bootstrap animation
+    });
+  });
+});
+
   
   

@@ -218,6 +218,50 @@ footer {
   padding: 5px;
 }
 
+.border-ra h2, .border-ra p .border-ra p li {
+text-align: center;
+}
+
+.achieve-list {
+  text-align: center; /* Centers the entire section */
+  padding-bottom: 10px;
+}
+
+.achieve-list p {
+  margin-bottom: 1rem; /* Adds spacing below the introductory paragraph */
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 2-column layout */
+  gap: 1rem; /* Adds spacing between items */
+  justify-content: center; /* Centers the grid within the container */
+  padding: 0 1rem; /* Adds padding to the grid */
+}
+
+.grid-list div {
+  background: var(--accent-color); /* Primary button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 6px; /* Rounded corners */
+  padding: 1rem; /* Padding inside the square */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 1rem; /* Text size */
+  line-height: 1.5; /* Readable line spacing */
+  text-align: center; /* Center-align text inside each square */
+  cursor: pointer; /* Show a pointer cursor to indicate interactivity */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.grid-list div:hover {
+  background: var(--secondary-color); /* Secondary button hover color */
+  color: var(--text-hover-color); /* Optional: Change text color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
+
 /* Tabs */
 .nav-tabs .nav-link {
   background-color: var(--secondary-color);
