@@ -97,5 +97,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Back to top button on about page
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTopButton = document.getElementById("backToTop");
+
+  // Show or hide the button based on scroll position
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  });
+
+  // Scroll back to the top when the button is clicked
+  backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
   
   
